@@ -1,0 +1,52 @@
+.homePage {
+    padding: 20px;
+    margin: 50px 0;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.homePage > article {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    margin: 25px;
+
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 96, 96, 1) 0%,
+        rgb(174, 37, 37) 100%
+    );
+}
+
+.homePage article img {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #ff6060;
+    background: linear-gradient(
+        180deg,
+        rgb(12, 7, 7) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+    );
+}
+
+article > p {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    width: 100px;
+    color: #fff;
+    /* color: red; */
+    font-weight: 500;
+}
+/* 
+.card {
+    color: bisque;
+} */

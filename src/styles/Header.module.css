@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.header {
+    height: 70px;
+    margin: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid orange; */
+}
+
+nav {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+li {
+    padding: 15px;
+    color: #ff6060;
+}
+
+li:hover,
+li:focus,
+.nav-active {
+    color: #ff6060;
+    text-decoration: underline;
+}

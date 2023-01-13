@@ -1,0 +1,22 @@
+main {
+    margin: 0 100px;
+}
+.imgBanner {
+    display: grid;
+    place-items: center;
+
+    height: 220px;
+    /* width: 100%; */
+    border-radius: 25px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../assets/imgHome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgBanner > p {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+}

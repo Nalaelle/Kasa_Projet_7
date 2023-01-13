@@ -1,0 +1,10 @@
+footer {
+    height: 150px;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+}
+
+footer > span {
+    color: #fff;
+}
