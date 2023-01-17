@@ -6,7 +6,6 @@ main {
     place-items: center;
 
     height: 220px;
-    /* width: 100%; */
     border-radius: 25px;
 
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -20,3 +19,22 @@ main {
     font-size: 45px;
     font-weight: 500;
 }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .imgBanner {
+        height: 110px;
+        border-radius: 10px;
+        background-position: 46% bottom;
+        margin-bottom: 15px;
+    }
+
+    .imgBanner > p {
+        padding: 15px 40px 15px 15px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 992px)  */
+/* @media screen and (min-width: 769px) and (max-width: 992px) */
+/* @media screen and (min-width: 0px) and (max-width: 768px)  */

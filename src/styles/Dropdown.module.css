@@ -1,0 +1,93 @@
+/* @keyframes arrow-turn {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+} */
+/* {
+    scrollbar-width: none;
+    overflow: hidden;
+}  */
+section {
+    margin: 50px 0 200px 0;
+}
+
+.dropdown {
+    border-radius: 5px;
+    margin: 20px 100px;
+}
+
+.strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+
+    height: 45px;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.title {
+    font-weight: 500;
+    color: #fff;
+
+    font-size: 25px;
+    line-height: 35px;
+    height: 45px;
+
+    /* border-radius: 5px; */
+    padding: 5px 0;
+}
+
+.arrowOpen,
+.arrowClose {
+    color: #fff;
+    height: 15px;
+    cursor: pointer;
+}
+
+.arrowOpen {
+    transform: rotate(-180deg);
+}
+
+.arrowClose {
+    transform: rotate(0deg);
+}
+
+.dropdown > p {
+    margin-top: -5px;
+    background-color: #f6f6f6;
+    border-radius: 0 5px;
+    padding: 20px;
+    color: #ff6060;
+}
+
+/* .open {
+    border: 2px solid black;
+} */
+
+.close {
+    display: none;
+
+    /* visibility: hidden; */
+    overflow: hidden;
+}
+/* Faire une classe active : Dropdown open else Dropdown close */
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    section {
+        margin: 0 0 100px 0;
+    }
+
+    .dropdown {
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 992px)  */
+/* @media screen and (min-width: 769px) and (max-width: 992px) */
+/* @media screen and (min-width: 0px) and (max-width: 768px)  */

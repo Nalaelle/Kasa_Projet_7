@@ -1,0 +1,135 @@
+.infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Location */
+
+.location > h1,
+.location > p {
+    color: #ff6060;
+}
+
+.location > h1 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.location > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #ff6060;
+    height: 25px;
+    min-width: 115px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/* Owner  */
+
+.owner {
+    display: flex;
+    flex-direction: column;
+}
+
+.infosOwner {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* margin: 15px; */
+}
+
+.infosOwner > p {
+    color: #ff6060;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.infosOwner > img {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    background-color: #c4c4c4;
+    object-fit: cover;
+}
+
+.starbox {
+    margin: 15px 0;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.star > img {
+    height: 30px;
+    width: 30px;
+}
+/* 
+.star > img {
+    fill: red !important;
+    color: #ff6060;
+    background-color: #491aca;
+} */
+
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    .infos {
+        flex-direction: column;
+    }
+    /* Location */
+
+    .location > h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .location > p {
+        font-size: 14px;
+    }
+
+    .tag {
+        font-size: 10px;
+        line-height: 18px;
+        border-radius: 5px;
+        height: 18px;
+        min-width: 85px;
+    }
+
+    /* Owner */
+
+    .owner {
+        flex-flow: row-reverse;
+    }
+
+    .infosOwner {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 15px;
+    }
+    .infosOwner > p {
+        margin-right: 10px;
+        font-size: 12px;
+        text-align: end;
+    }
+    .infosOwner > img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .starbox {
+        align-items: flex-end;
+        width: 100px;
+    }
+
+    .star > img {
+        height: 15px;
+        width: 15px;
+    }
+}

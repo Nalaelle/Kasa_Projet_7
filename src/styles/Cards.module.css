@@ -8,7 +8,7 @@
     flex-flow: row wrap;
 }
 
-.homePage > article {
+.homePage article {
     position: relative;
     display: flex;
     flex-flow: row;
@@ -24,12 +24,17 @@
     );
 }
 
-.homePage article img {
+/* .homePage article:hover {
+} */
+
+article > .imgCard {
+    position: relative;
+    z-index: 2;
     height: 340px;
     width: 340px;
     border-radius: 10px;
     object-fit: cover;
-    background-color: #ff6060;
+    /* background-color: #ff6060; */
     background: linear-gradient(
         180deg,
         rgb(12, 7, 7) 0%,
@@ -37,16 +42,63 @@
     );
 }
 
-article > p {
+article > .titleLocation {
     position: absolute;
     bottom: 30px;
     left: 15px;
     width: 100px;
     color: #fff;
-    /* color: red; */
     font-weight: 500;
+    z-index: 3;
 }
-/* 
-.card {
-    color: bisque;
+
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    .homePage {
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        border-radius: 25px;
+    }
+
+    .homePage article {
+        margin: 15px 0;
+
+        height: 255px;
+        width: 100%;
+    }
+
+    article > .imgCard {
+        height: 255px;
+        width: 100%;
+
+        background: linear-gradient(
+            180deg,
+            rgb(12, 7, 7) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+    }
+
+    article > .titleLocation {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+/* @media screen and (min-width: 431px) and (max-width: 992px) {
+    .homePage {
+    }
+
+    .homePage article {
+    }
+
+    article img {
+    }
 } */
+
+/* body {
+    background-color: orangered;
+} */
+
+/* @media screen and (min-width: 0px) and (max-width: 992px)  */
+/* @media screen and (min-width: 769px) and (max-width: 992px) */
+/* @media screen and (min-width: 0px) and (max-width: 768px)  */

@@ -12,6 +12,7 @@
 
 .error_main > p {
     margin: 20px;
+    font-size: 36px;
 }
 
 .error_main button {
@@ -19,10 +20,26 @@
     text-decoration: underline;
     color: #ff6060;
     line-height: 25px;
+    font-size: 18px;
     border: none;
     background: transparent;
 }
 
 .error_main button:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    .error_main > h1 {
+        font-size: 105px;
+    }
+    .error_main > p {
+        margin: 30px 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .error_main button {
+        font-size: 14px;
+        margin: 20px;
+    }
 }

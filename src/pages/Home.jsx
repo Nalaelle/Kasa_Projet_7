@@ -3,8 +3,6 @@ import React from "react";
 import style from "../styles/Home.module.css";
 import Cards from "../components/Cards";
 
-// import FetchApi from "../components/FetchApi";
-
 const Home = () => {
     return (
         <main className={style.main}>

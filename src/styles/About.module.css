@@ -1,0 +1,25 @@
+main {
+    margin: 0 100px;
+}
+.imgBanner {
+    margin-bottom: 20px;
+
+    display: grid;
+    place-items: center;
+    height: 220px;
+    border-radius: 25px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../assets/imgAbout.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .imgBanner {
+        background: url("../assets/imgAboutMobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 17% 31%;
+    }
+}

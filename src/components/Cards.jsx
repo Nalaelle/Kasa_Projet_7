@@ -21,17 +21,22 @@ function Cards() {
     useEffect(() => {
         getData();
     }, []);
-    // console.log("*************************");
-    // console.log(data);
-    // console.log("----- ---- --- --- --- ");
 
     return (
         <section className={style.homePage}>
             {data.map((el) => (
-                <NavLink to="/housing:id" className={style.card}>
+                <NavLink
+                    key={el.id}
+                    to={`housing/${el.id}`}
+                    className={style.card}
+                >
                     <article>
-                        <img src={el.cover} alt={el.title} />
-                        <p>{el.title}</p>
+                        <img
+                            className={style.imgCard}
+                            src={el.cover}
+                            alt={el.title}
+                        />
+                        <p className={style.titleLocation}>{el.title}</p>
                     </article>
                 </NavLink>
             ))}

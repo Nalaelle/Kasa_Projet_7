@@ -1,11 +1,16 @@
 import React from "react";
+import Dropdown from "../components/Dropdown";
+import style from "../styles/About.module.css";
 
 const About = () => {
     return (
-        <div>
-            <h2>A propos test</h2>
-        </div>
+        <main className={style.main}>
+            <div className={style.imgBanner}></div>
+            <Dropdown />
+        </main>
     );
 };
 
 export default About;
+
+// Dropdown titre dynamique et contenu
