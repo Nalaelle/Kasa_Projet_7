@@ -6,7 +6,7 @@ const About = () => {
     return (
         <main className={style.main}>
             <div className={style.imgBanner}></div>
-            <Dropdown />
+            <Dropdown dataUrl="../infos.json" />
         </main>
     );
 };

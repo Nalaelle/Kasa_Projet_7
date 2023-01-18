@@ -1,26 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useFetch } from "./hooks/FetchApi";
 import style from "../styles/Cards.module.css";
 import { NavLink } from "react-router-dom";
 
 function Cards() {
-    const [data, setData] = useState([]);
-    const getData = () => {
-        fetch("data.json")
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (myJson) {
-                setData(myJson);
-            })
-            .catch((err) => {
-                console.log(err);
-                console.log("il y a une erreur");
-            });
-    };
-
-    useEffect(() => {
-        getData();
-    }, []);
+    const { data } = useFetch("../data.json");
 
     return (
         <section className={style.homePage}>

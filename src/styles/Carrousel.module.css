@@ -1,0 +1,50 @@
+/* section */
+.carrousel {
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+
+    position: relative;
+
+    background-color: red;
+}
+
+.arrowCarrouselLeft {
+    background-color: blueviolet;
+    transform: rotate(90deg);
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.arrowCarrouselRight {
+    background-color: blueviolet;
+    transform: rotate(-90deg);
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+/* div */
+.imageCentral {
+    position: relative;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+}
+/* img */
+
+.imageCentral > img {
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+}
+/* span */
+.counter {
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    left: 50%;
+}
