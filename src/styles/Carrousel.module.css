@@ -6,11 +6,11 @@
 
     position: relative;
 
-    background-color: red;
+    /* background-color: red; */
 }
 
 .arrowCarrouselLeft {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     transform: rotate(90deg);
     z-index: 2;
     position: absolute;
@@ -19,12 +19,13 @@
 }
 
 .arrowCarrouselRight {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     transform: rotate(-90deg);
     z-index: 2;
     position: absolute;
     top: 50%;
     right: 0;
+    cursor: pointer;
 }
 
 /* div */

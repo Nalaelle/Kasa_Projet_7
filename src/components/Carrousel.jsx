@@ -3,38 +3,20 @@ import Arrow from "../assets/arrowDropdown.svg";
 import style from "../styles/Carrousel.module.css";
 
 const Carrousel = ({ data, dataID }) => {
-    // console.log(data, "carrousel");
-    // console.log(dataID, " data id carrousel");
-    const [previousPicture, setPreviousPicture] = useState(0);
-    const [nextPicture, setNextPicture] = useState(0);
+    const [countPicture, setCountPicture] = useState(1);
+    let arrayPicture = [];
 
-    function getPrevious() {
-        console.log(previousPicture);
-        console.log(setPreviousPicture);
-    }
-
-    function getNext() {
-        console.log(nextPicture);
-        console.log(setNextPicture);
-    }
-
-    let imgUrl;
-    let counter;
-    let arrayPicture = []; // ya plus qu'a iterer sur le tableau pour recup img et le counter
     data.map((el) => {
         if (el.id === dataID) {
-            // console.log(el.pictures);
             for (let i in el.pictures) {
-                imgUrl = el.pictures[i];
-                counter = i;
-                arrayPicture.push(imgUrl);
-                console.log("Array img", arrayPicture);
-                // console.log(imgUrl);
-                // console.log(counter);
+                arrayPicture.push(el.pictures[i]);
             }
-            return { counter, imgUrl };
+            return { arrayPicture };
         } else return null;
     });
+
+    const counteurImg = arrayPicture.length;
+    console.log(counteurImg);
 
     return (
         <section className={style.carrousel}>
@@ -42,21 +24,35 @@ const Carrousel = ({ data, dataID }) => {
                 className={style.arrowCarrouselLeft}
                 src={Arrow}
                 alt=" fleche de direction précedente"
-                onClick={getPrevious}
+                onClick={() => {
+                    countPicture > 1 && setCountPicture(countPicture - 1);
+                    if (countPicture === 1) {
+                        setCountPicture(countPicture - 1 + counteurImg);
+                    }
+                }}
             />
             <div className={style.imageCentral}>
-                <img src={imgUrl} alt="Photograpies de l'appartement" />
-                <span className={style.counter}>{counter}</span>
+                <img
+                    src={arrayPicture[countPicture - 1]}
+                    alt="Photograpies de l'appartement"
+                />
+                <span className={style.counter}>
+                    {countPicture} / {arrayPicture.length}
+                </span>
             </div>
             <img
                 className={style.arrowCarrouselRight}
                 src={Arrow}
                 alt=" fleche de direction suivante"
-                onClick={getNext}
+                onClick={() => {
+                    countPicture < counteurImg &&
+                        setCountPicture(countPicture + 1);
+                    if (countPicture === counteurImg) {
+                        setCountPicture(countPicture + 1 - counteurImg);
+                    }
+                }}
             />
         </section>
     );
 };
 export default Carrousel;
-
-// Counter + chevron + image box img
