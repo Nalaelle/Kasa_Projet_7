@@ -15,6 +15,7 @@
     width: 340px;
     margin: 2%;
     border-radius: 10px;
+    flex-grow: 1;
 }
 
 .homePage article {
@@ -55,7 +56,7 @@ article > .imgCard {
     width: 340px;
     border-radius: 10px;
     object-fit: cover;
-
+    flex-grow: 1;
     z-index: 2;
     /* background-color: #ff6060; */
 }

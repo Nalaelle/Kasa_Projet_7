@@ -1,31 +1,31 @@
 import React from "react";
-
+// import React, { useEffect, useState } from "react";
+import { useWindowSize } from "./hooks/ScreenSize";
 import style from "../styles/Housing.module.css";
 
 const Rating = ({ numberRating }) => {
-    // ECOUTE DU CLICK SUR L ETOILE => il faut modifier la aleur de ' fill={color} '
-    // ENLEVER LE MAP et ajouter : onClick={stateColor} ainsi que le hook useState ...
-
-    // const [colorValue, setColorValue] = useState(false);
-    // const color = colorValue ? "#E3E3E3" : "#ff6060";
-    // const stateColor = () => {
-    //     setColorValue(!colorValue);
-    //     console.log(!colorValue);
-    // };
-
     const starNumber = [1, 2, 3, 4, 5];
     // console.log(numberRating);
+    const { windowSize } = useWindowSize();
+
+    console.log("windowSize : ", windowSize);
+
+    let ecartStar = "50";
+    let sizeStar = "0 0 30 30 ";
+    if (windowSize.width <= 768) {
+        sizeStar = "0 0 50 50 ";
+        ecartStar = "30";
+    }
 
     return (
         <div className={style.stars}>
             {starNumber.map((el) =>
                 el <= numberRating ? (
-                    // <span key={el + Math.random()} className={style.star}>
                     <span key={el + Math.random()}>
                         <svg
-                            width="50"
+                            width={ecartStar}
                             height="30"
-                            viewBox="0 0 30 30"
+                            viewBox={sizeStar}
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -36,12 +36,11 @@ const Rating = ({ numberRating }) => {
                         </svg>
                     </span>
                 ) : (
-                    // <span key={el + Math.random()} className={style.star}>
                     <span key={el + Math.random()}>
                         <svg
-                            width="50"
+                            width={ecartStar}
                             height="30"
-                            viewBox="0 0 30 30"
+                            viewBox={sizeStar}
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
