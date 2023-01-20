@@ -19,25 +19,51 @@ nav {
     align-items: center;
 }
 
-ul {
+.containerNav {
     display: flex;
     /* border: 1px solid black; */
 }
 
-li {
+.dotNavigation {
     padding: 15px;
     width: 100%;
     color: #ff6060;
 }
 
-li:hover,
-li:focus,
+.dotNavigation:hover,
+.dotNavigation:focus,
 .nav-active {
     color: #ff6060;
     text-decoration: underline;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 530px) {
+    main {
+        margin: 20px;
+    }
+
+    .header {
+        height: 60px;
+        margin: 20px 15px;
+        align-items: center;
+    }
+
+    .header > img {
+        width: 45%;
+    }
+
+    nav {
+        width: 55%;
+        justify-content: flex-end;
+    }
+
+    nav .dotNavigation {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 531px) and (max-width: 992px) {
     main {
         margin: 20px;
     }
@@ -57,8 +83,13 @@ li:focus,
         justify-content: flex-end;
     }
 
-    nav li {
-        font-size: 12px;
+    nav .dotNavigation {
+        font-size: 15px;
         padding: 5px;
+    }
+
+    nav .dotNavigation {
+        font-size: 20px;
+        padding: 15px;
     }
 }

@@ -21,7 +21,7 @@ const Carrousel = ({ data, dataID }) => {
     return (
         <section className={style.carrousel}>
             <img
-                className={style.arrowCarrouselLeft}
+                className={`${style.arrowCarrouselLeft} ${style.arrows}`}
                 src={Arrow}
                 alt=" fleche de direction précedente"
                 onClick={() => {
@@ -41,7 +41,7 @@ const Carrousel = ({ data, dataID }) => {
                 </span>
             </div>
             <img
-                className={style.arrowCarrouselRight}
+                className={`${style.arrowCarrouselRight} ${style.arrows}`}
                 src={Arrow}
                 alt=" fleche de direction suivante"
                 onClick={() => {

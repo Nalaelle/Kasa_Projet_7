@@ -17,10 +17,11 @@ const Rating = ({ numberRating }) => {
     // console.log(numberRating);
 
     return (
-        <div>
+        <div className={style.stars}>
             {starNumber.map((el) =>
                 el <= numberRating ? (
-                    <span key={el + Math.random()} className={style.star}>
+                    // <span key={el + Math.random()} className={style.star}>
+                    <span key={el + Math.random()}>
                         <svg
                             width="50"
                             height="30"
@@ -35,7 +36,8 @@ const Rating = ({ numberRating }) => {
                         </svg>
                     </span>
                 ) : (
-                    <span key={el + Math.random()} className={style.star}>
+                    // <span key={el + Math.random()} className={style.star}>
+                    <span key={el + Math.random()}>
                         <svg
                             width="50"
                             height="30"

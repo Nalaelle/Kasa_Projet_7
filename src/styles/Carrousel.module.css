@@ -1,51 +1,91 @@
 /* section */
 .carrousel {
-    height: 415px;
+    height: 420px;
     width: 100%;
     border-radius: 25px;
-
     position: relative;
-
-    /* background-color: red; */
+    margin-bottom: 30px;
 }
 
-.arrowCarrouselLeft {
+.arrows {
     /* background-color: blueviolet; */
-    transform: rotate(90deg);
-    z-index: 2;
+
     position: absolute;
+    height: 50px;
+    z-index: 2;
     top: 50%;
+    bottom: 50%;
+    /* transform: translate(-50%, -50%); */
     cursor: pointer;
+}
+.arrowCarrouselLeft {
+    transform: rotate(90deg);
+    /* left: 0; */
 }
 
 .arrowCarrouselRight {
-    /* background-color: blueviolet; */
     transform: rotate(-90deg);
-    z-index: 2;
-    position: absolute;
-    top: 50%;
     right: 0;
-    cursor: pointer;
 }
 
 /* div */
 .imageCentral {
     position: relative;
-    height: 415px;
+    height: 420px;
     width: 100%;
     border-radius: 25px;
 }
 /* img */
 
 .imageCentral > img {
-    height: 415px;
+    height: 420px;
     width: 100%;
     border-radius: 25px;
+    object-fit: cover;
 }
 /* span */
 .counter {
+    color: #fff;
+    font-weight: 500;
     position: absolute;
     z-index: 3;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 0px) and (max-width: 430px) {
+    .carrousel {
+        height: 320px;
+        /* width: 100vw; */
+
+        /* margin-bottom: 30px; */
+    }
+    .imageCentral,
+    .imageCentral > img {
+        height: 320px;
+    }
+
+    .arrows {
+        height: 20px;
+    }
+    .counter {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 992px) {
+    .carrousel {
+        height: 330px;
+
+        margin-bottom: 30px;
+    }
+    .arrows {
+        height: 20px;
+    }
+    .imageCentral,
+    .imageCentral > img {
+        height: 330px;
+    }
 }

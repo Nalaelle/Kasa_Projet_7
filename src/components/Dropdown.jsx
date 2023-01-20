@@ -1,7 +1,9 @@
 import React from "react";
 import { useFetch } from "./hooks/FetchApi";
 
-import Drop from "./drop";
+import Drop from "./Drop";
+import style from "../styles/Dropdown.module.css";
+
 function Dropdown({ dataUrl, dataID }) {
     // console.log(dataUrl);
     // console.log(dataID);
@@ -30,7 +32,12 @@ function Dropdown({ dataUrl, dataID }) {
                     if (el.id === dataID) {
                         // iteration pour afficher les equipements => tools
                         const toolsIteration = el.equipments.map((tools) => (
-                            <li key={el.id + Math.random()}>{tools}</li>
+                            <li
+                                key={el.id + Math.random()}
+                                className={style.listTools}
+                            >
+                                {tools}
+                            </li>
                         ));
                         return (
                             <Drop

@@ -6,22 +6,43 @@
 
     display: flex;
     flex-flow: row wrap;
+    /* gap: 2%; */
+}
+
+.homePage > .card {
+    background-color: #ff6060;
+    height: 340px;
+    width: 340px;
+    margin: 2%;
+    border-radius: 10px;
 }
 
 .homePage article {
     position: relative;
     display: flex;
     flex-flow: row;
-    margin: 25px;
-
-    height: 340px;
-    width: 340px;
     border-radius: 10px;
+
+    z-index: 4;
+    /* margin: 25px; */
+
+    /* height: 340px;
+    width: 340px; */
+}
+
+.homePage article::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 2px solid #ff6060; */
     background: linear-gradient(
         180deg,
-        rgba(255, 96, 96, 1) 0%,
-        rgb(174, 37, 37) 100%
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(0, 0, 0, 0.55) 100%
     );
+    z-index: 3;
 }
 
 /* .homePage article:hover {
@@ -34,12 +55,9 @@ article > .imgCard {
     width: 340px;
     border-radius: 10px;
     object-fit: cover;
+
+    z-index: 2;
     /* background-color: #ff6060; */
-    background: linear-gradient(
-        180deg,
-        rgb(12, 7, 7) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-    );
 }
 
 article > .titleLocation {
@@ -49,7 +67,7 @@ article > .titleLocation {
     width: 100px;
     color: #fff;
     font-weight: 500;
-    z-index: 3;
+    z-index: 4;
 }
 
 @media screen and (min-width: 0px) and (max-width: 430px) {
@@ -59,10 +77,8 @@ article > .titleLocation {
         background-color: #fff;
         border-radius: 25px;
     }
-
+    .homePage > .card,
     .homePage article {
-        margin: 15px 0;
-
         height: 255px;
         width: 100%;
     }
@@ -70,12 +86,6 @@ article > .titleLocation {
     article > .imgCard {
         height: 255px;
         width: 100%;
-
-        background: linear-gradient(
-            180deg,
-            rgb(12, 7, 7) 0%,
-            rgba(0, 0, 0, 0.5) 100%
-        );
     }
 
     article > .titleLocation {

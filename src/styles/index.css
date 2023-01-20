@@ -16,3 +16,13 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
+
+/* body.blog {
+    --color-thumb: var(--color-red);
+}
+body {
+    margin: 0;
+    font: 400 var(--font-size-base)/1.5 var(--font-stack-common);
+    background: var(--color-background);
+    color: var(--color-text);
+} */

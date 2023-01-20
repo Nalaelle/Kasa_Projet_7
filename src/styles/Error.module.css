@@ -1,4 +1,5 @@
 .error_main {
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,5 +42,11 @@
     .error_main button {
         font-size: 14px;
         margin: 20px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 992px) {
+    .error_main > p {
+        text-align: center;
     }
 }

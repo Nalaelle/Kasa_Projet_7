@@ -38,8 +38,8 @@ function Drop({ title, description, page, tool, id }) {
         );
     } else {
         return (
-            <div key={Math.random()}>
-                <div key={id + Math.random()} className={style.dropdown}>
+            <div key={Math.random()} className={style.dropdownRow}>
+                <div key={id + Math.random()} className={style.dropdownHouse}>
                     <div
                         key={id + Math.random()}
                         className={style.strip}
@@ -68,14 +68,14 @@ function Drop({ title, description, page, tool, id }) {
                         {description}
                     </p>
                 </div>
-                <div
-                    key={id + Math.random()}
-                    className={style.dropdown}
-                    onClick={() => {
-                        setEquipmentsValue(!equipmentsValue);
-                    }}
-                >
-                    <div key={id + Math.random()} className={style.strip}>
+                <div key={id + Math.random()} className={style.dropdownHouse}>
+                    <div
+                        key={id + Math.random()}
+                        className={style.strip}
+                        onClick={() => {
+                            setEquipmentsValue(!equipmentsValue);
+                        }}
+                    >
                         <h3 className={style.title}>Équipements</h3>
                         <img
                             key={id + Math.random()}
@@ -88,13 +88,16 @@ function Drop({ title, description, page, tool, id }) {
                             }
                         />
                     </div>
-
+                    {/* <p> */}
                     <ul
                         key={id + Math.random()}
-                        className={equipmentsValue ? style.close : style.open}
+                        className={`${
+                            equipmentsValue ? style.close : style.open
+                        } ${style.containerTools}`}
                     >
                         {tool}
                     </ul>
+                    {/* </p> */}
                 </div>
             </div>
         );

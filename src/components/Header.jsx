@@ -8,19 +8,19 @@ function Header() {
         <header className={style.header}>
             <img src={kasa} alt="Logo de l'entreprise Kasa" />
             <nav>
-                <ul>
+                <ul className={style.containerNav}>
                     {/* Attention le nav is active ne fonctionne plus à voir avec les modules css */}
                     <NavLink
                         to="/"
                         className={(nav) => (nav.isActive ? "nav-active" : "")}
                     >
-                        <li>Acceuil</li>
+                        <li className={style.dotNavigation}>Acceuil</li>
                     </NavLink>
                     <NavLink
                         to="/about"
                         className={(nav) => (nav.isActive ? "nav-active" : "")}
                     >
-                        <li>A Propos</li>
+                        <li className={style.dotNavigation}>A Propos</li>
                     </NavLink>
                 </ul>
             </nav>

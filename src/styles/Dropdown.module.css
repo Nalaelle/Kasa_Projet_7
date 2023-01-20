@@ -11,12 +11,22 @@
     overflow: hidden;
 }  */
 section {
-    margin: 50px 0 200px 0;
+    margin: 50px 0 100px 0;
+}
+.dropdownRow {
+    display: flex;
+    /* flex-basis: 50%; */
+    flex-direction: row;
 }
 
 .dropdown {
     border-radius: 5px;
-    margin: 20px 100px;
+    margin: 20px 85px;
+}
+.dropdownHouse {
+    border-radius: 5px;
+    margin: 20px;
+    width: 100%;
 }
 
 .strip {
@@ -28,6 +38,7 @@ section {
     height: 45px;
     border-radius: 5px;
     padding: 5px 20px;
+    position: relative;
 }
 
 .title {
@@ -38,7 +49,6 @@ section {
     line-height: 35px;
     height: 45px;
 
-    /* border-radius: 5px; */
     padding: 5px 0;
 }
 
@@ -57,24 +67,36 @@ section {
     transform: rotate(0deg);
 }
 
-.dropdown > p {
+/* ul */
+.containerTools {
+    display: flex;
+    flex-direction: column;
+}
+/* li */
+.listTools {
+    width: 100%;
+}
+.dropdown > p,
+.dropdown > ul,
+.dropdownHouse > p,
+.dropdownHouse > ul {
     margin-top: -5px;
     background-color: #f6f6f6;
     border-radius: 0 5px;
     padding: 20px;
     color: #ff6060;
 }
+.dropdownHouse > p,
+.dropdownHouse > ul {
+    min-height: 230px;
+}
 
-/* .open {
-    border: 2px solid black;
-} */
-
+/* .open  */
 .close {
     display: none;
-
-    /* visibility: hidden; */
     overflow: hidden;
 }
+
 /* Faire une classe active : Dropdown open else Dropdown close */
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -85,6 +107,16 @@ section {
     .dropdown {
         border-radius: 5px;
         margin: 20px 0;
+    }
+    .dropdownRow {
+        flex-direction: column;
+    }
+    .dropdownHouse {
+        margin: 20px 0 20px 0;
+    }
+    .dropdownHouse > p,
+    .dropdownHouse > ul {
+        min-height: 230px;
     }
 }
 
