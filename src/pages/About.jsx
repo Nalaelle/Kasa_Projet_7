@@ -12,5 +12,3 @@ const About = () => {
 };
 
 export default About;
-
-// Dropdown titre dynamique et contenu

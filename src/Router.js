@@ -11,7 +11,7 @@ import Error from "./pages/Error";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-function App() {
+function Router() {
     return (
         <BrowserRouter>
             <Header />
@@ -26,4 +26,4 @@ function App() {
     );
 }
 
-export default App;
+export default Router;

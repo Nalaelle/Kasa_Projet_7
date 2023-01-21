@@ -10,33 +10,30 @@
     margin: 40px 100px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid orange; */
 }
 
 .header > img {
     max-width: 220px;
 }
 nav {
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
 }
 
 .containerNav {
     display: flex;
-    /* border: 1px solid black; */
 }
 
 .dotNavigation {
     padding: 15px;
     width: 100%;
-    color: #ff6060;
+    color: var(--colorPrimary);
 }
 
 .dotNavigation:hover,
 .dotNavigation:focus,
 .nav-active {
-    color: #ff6060;
+    color: var(--colorPrimary);
     text-decoration: underline;
 }
 

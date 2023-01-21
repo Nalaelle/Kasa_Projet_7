@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #ff6060;
+    color: var(--colorPrimary);
 }
 
 .error_main > h1 {
@@ -19,7 +19,7 @@
 .error_main button {
     margin: 100px;
     text-decoration: underline;
-    color: #ff6060;
+    color: var(--colorPrimary);
     line-height: 25px;
     font-size: 18px;
     border: none;

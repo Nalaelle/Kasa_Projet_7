@@ -1,14 +1,11 @@
 import React from "react";
-// import React, { useEffect, useState } from "react";
 import { useWindowSize } from "./hooks/ScreenSize";
 import style from "../styles/Housing.module.css";
 
 const Rating = ({ numberRating }) => {
     const starNumber = [1, 2, 3, 4, 5];
-    // console.log(numberRating);
-    const { windowSize } = useWindowSize();
 
-    console.log("windowSize : ", windowSize);
+    const { windowSize } = useWindowSize();
 
     let ecartStar = "50";
     let sizeStar = "0 0 30 30 ";

@@ -8,19 +8,15 @@
 }
 
 .arrows {
-    /* background-color: blueviolet; */
-
     position: absolute;
     height: 50px;
     z-index: 2;
     top: 50%;
     bottom: 50%;
-    /* transform: translate(-50%, -50%); */
     cursor: pointer;
 }
 .arrowCarrouselLeft {
     transform: rotate(90deg);
-    /* left: 0; */
 }
 
 .arrowCarrouselRight {
@@ -58,9 +54,6 @@
 @media screen and (min-width: 0px) and (max-width: 430px) {
     .carrousel {
         height: 320px;
-        /* width: 100vw; */
-
-        /* margin-bottom: 30px; */
     }
     .imageCentral,
     .imageCentral > img {
@@ -78,7 +71,6 @@
 @media screen and (min-width: 431px) and (max-width: 992px) {
     .carrousel {
         height: 330px;
-
         margin-bottom: 30px;
     }
     .arrows {

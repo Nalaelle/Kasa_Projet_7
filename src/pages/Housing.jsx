@@ -14,11 +14,9 @@ const Housing = () => {
 
     // call api
     const { data } = useFetch("../data.json");
-    // const { data, error, isLoading } = useFetch("../data.json");
 
     const { id } = useParams();
     const houseID = id;
-    // console.log("houseID", houseID);
 
     // ************************
 
@@ -31,12 +29,9 @@ const Housing = () => {
                 }
                 return null;
             });
-            // console.log("x", x);
             if (x >= 20) {
-                console.log("redirection");
+                console.log("redirection page non trouvée");
                 navigate("/error");
-            } else {
-                console.log("Stay here ");
             }
         }
         Verif();
@@ -45,8 +40,6 @@ const Housing = () => {
     return (
         <main>
             <Carrousel data={data} dataID={houseID} />
-
-            {/* **************************************** */}
             {data.map((el) => {
                 if (el.id === houseID) {
                     // iteration pour afficher les tags
@@ -76,7 +69,6 @@ const Housing = () => {
                                 </div>
                                 <Rating numberRating={el.rating} />
                             </article>
-                            {/* <Dropdown dataUrl="../data.json" /> */}
                         </div>
                     );
                 }

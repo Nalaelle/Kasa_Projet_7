@@ -16,12 +16,13 @@ const Carrousel = ({ data, dataID }) => {
     });
 
     const counteurImg = arrayPicture.length;
-    console.log(counteurImg);
 
     return (
         <section className={style.carrousel}>
             <img
-                className={`${style.arrowCarrouselLeft} ${style.arrows}`}
+                className={`${style.arrowCarrouselLeft} ${
+                    counteurImg !== 1 ? style.arrows : ""
+                }`}
                 src={Arrow}
                 alt=" fleche de direction précedente"
                 onClick={() => {
@@ -41,7 +42,9 @@ const Carrousel = ({ data, dataID }) => {
                 </span>
             </div>
             <img
-                className={`${style.arrowCarrouselRight} ${style.arrows}`}
+                className={`${style.arrowCarrouselRight} ${
+                    counteurImg !== 1 ? style.arrows : ""
+                }`}
                 src={Arrow}
                 alt=" fleche de direction suivante"
                 onClick={() => {

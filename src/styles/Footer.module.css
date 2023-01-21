@@ -1,17 +1,9 @@
-/* main {
-    margin: 0 100px;
-} */
-
 footer {
     padding: 20px;
     height: 150px;
     background-color: #000;
     display: grid;
     place-items: center;
-    /* position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0; */
 }
 
 footer > span {

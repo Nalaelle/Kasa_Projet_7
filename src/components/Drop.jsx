@@ -9,18 +9,18 @@ function Drop({ title, description, page, tool, id }) {
     if (page === "about") {
         return (
             <div
-                key={id + Math.random()}
+                key={Math.random()}
                 className={style.dropdown}
                 onClick={() => {
                     setDropdownValue(!dropdownValue);
                 }}
             >
-                <div key={id + Math.random()} className={style.strip}>
-                    <h3 key={id + Math.random()} className={style.title}>
+                <div key={Math.random()} className={style.strip}>
+                    <h3 key={Math.random()} className={style.title}>
                         {title}
                     </h3>
                     <img
-                        key={id + Math.random()}
+                        key={Math.random()}
                         src={Arrow}
                         alt="Flèche d'ouverture"
                         className={
@@ -88,7 +88,6 @@ function Drop({ title, description, page, tool, id }) {
                             }
                         />
                     </div>
-                    {/* <p> */}
                     <ul
                         key={id + Math.random()}
                         className={`${
@@ -97,7 +96,6 @@ function Drop({ title, description, page, tool, id }) {
                     >
                         {tool}
                     </ul>
-                    {/* </p> */}
                 </div>
             </div>
         );
