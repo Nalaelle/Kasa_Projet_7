@@ -16,10 +16,19 @@ const Carrousel = ({ data, dataID }) => {
     });
 
     const counteurImg = arrayPicture.length;
+    // accessibilité : tabIndex / onKeyUp
 
     return (
         <section className={style.carrousel}>
             <img
+                tabIndex={0}
+                onKeyUp={() => {
+                    countPicture > 1 && setCountPicture(countPicture - 1);
+                    if (countPicture === 1) {
+                        setCountPicture(countPicture - 1 + counteurImg);
+                    }
+                }}
+                role="button"
                 className={`${style.arrowCarrouselLeft} ${
                     counteurImg !== 1 ? style.arrows : ""
                 }`}
@@ -42,6 +51,14 @@ const Carrousel = ({ data, dataID }) => {
                 </span>
             </div>
             <img
+                tabIndex={0}
+                onKeyUp={() => {
+                    countPicture > 1 && setCountPicture(countPicture - 1);
+                    if (countPicture === 1) {
+                        setCountPicture(countPicture - 1 + counteurImg);
+                    }
+                }}
+                role="button"
                 className={`${style.arrowCarrouselRight} ${
                     counteurImg !== 1 ? style.arrows : ""
                 }`}

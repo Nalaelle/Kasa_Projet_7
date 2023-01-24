@@ -20,6 +20,14 @@ function Drop({ title, description, page, tool, id }) {
                         {title}
                     </h3>
                     <img
+                        tabIndex={0}
+                        onKeyDown={(e) => {
+                            e = e || window.event;
+                            if (e.key === "Enter") {
+                                setDropdownValue(!dropdownValue);
+                            }
+                        }}
+                        role="button"
                         key={Math.random()}
                         src={Arrow}
                         alt="Flèche d'ouverture"
@@ -51,6 +59,14 @@ function Drop({ title, description, page, tool, id }) {
                             Description
                         </h3>
                         <img
+                            tabIndex={0}
+                            onKeyDown={(e) => {
+                                e = e || window.event;
+                                if (e.key === "Enter") {
+                                    setDropdownValue(!dropdownValue);
+                                }
+                            }}
+                            role="button"
                             key={id + Math.random()}
                             src={Arrow}
                             alt="Flèche d'ouverture"
@@ -78,6 +94,14 @@ function Drop({ title, description, page, tool, id }) {
                     >
                         <h3 className={style.title}>Équipements</h3>
                         <img
+                            tabIndex={0}
+                            onKeyDown={(e) => {
+                                e = e || window.event;
+                                if (e.key === "Enter") {
+                                    setEquipmentsValue(!equipmentsValue);
+                                }
+                            }}
+                            role="button"
                             key={id + Math.random()}
                             src={Arrow}
                             alt="Flèche d'ouverture"
