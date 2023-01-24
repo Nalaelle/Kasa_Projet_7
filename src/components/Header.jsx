@@ -1,26 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import style from "../styles/Header.module.css";
+import "../styles/Header.css";
 import kasa from "../assets/kasa.png";
 
 function Header() {
     return (
-        <header className={style.header}>
+        <header className="header">
             <img src={kasa} alt="Logo de l'entreprise Kasa" />
             <nav>
-                <ul className={style.containerNav}>
-                    {/* Attention le nav is active ne fonctionne plus à voir avec les modules css */}
+                <ul className="containerNav">
                     <NavLink
                         to="/"
                         className={(nav) => (nav.isActive ? "nav-active" : "")}
                     >
-                        <li className={style.dotNavigation}>Acceuil</li>
+                        <li className="dotNavigation">Accueil</li>
                     </NavLink>
                     <NavLink
                         to="/about"
                         className={(nav) => (nav.isActive ? "nav-active" : "")}
                     >
-                        <li className={style.dotNavigation}>A Propos</li>
+                        <li className="dotNavigation">A Propos</li>
                     </NavLink>
                 </ul>
             </nav>

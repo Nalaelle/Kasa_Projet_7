@@ -19,18 +19,17 @@ const Housing = () => {
     const houseID = id;
 
     // ************************
-
     useEffect(() => {
+        // function qui verifie si la propriété est trouvée
         function Verif() {
-            let x = 0;
+            let iteratateID = 0;
             data.map((el) => {
                 if (!(el.id === houseID)) {
-                    return (x = x + 1);
+                    return (iteratateID = iteratateID + 1);
                 }
                 return null;
             });
-            if (x >= 20) {
-                console.log("redirection page non trouvée");
+            if (iteratateID >= 20) {
                 navigate("/error");
             }
         }
