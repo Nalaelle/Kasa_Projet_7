@@ -70,6 +70,11 @@ article > .titleLocation {
         background-color: #fff;
         border-radius: 25px;
     }
+
+    .homePage > .card {
+        margin: 2% 0;
+    }
+
     .homePage > .card,
     .homePage article {
         height: 255px;

@@ -4,7 +4,7 @@
     width: 100%;
     border-radius: 25px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .arrows {
@@ -54,12 +54,13 @@
 @media screen and (min-width: 0px) and (max-width: 430px) {
     .carrousel {
         height: 320px;
+        /* border-radius: 10px; */
     }
     .imageCentral,
     .imageCentral > img {
         height: 320px;
+        border-radius: 10px;
     }
-
     .arrows {
         height: 20px;
     }

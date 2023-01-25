@@ -4,6 +4,7 @@ section {
 .dropdownRow {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .dropdown {
@@ -12,8 +13,8 @@ section {
 }
 .dropdownHouse {
     border-radius: 5px;
-    margin: 20px;
-    width: 100%;
+    /* margin: 20px; */
+    width: 48%;
 }
 
 .strip {
@@ -69,13 +70,14 @@ section {
 .dropdownHouse > ul {
     margin-top: -5px;
     background-color: #f6f6f6;
-    border-radius: 0 5px;
+    border-radius: 0 0 6px 6px;
     padding: 20px;
     color: var(--colorPrimary);
+    line-height: 18px;
 }
 .dropdownHouse > p,
 .dropdownHouse > ul {
-    min-height: 230px;
+    min-height: 200px;
 }
 
 /* .open  */
@@ -98,9 +100,22 @@ section {
     }
     .dropdownHouse {
         margin: 20px 0 20px 0;
+        width: 100%;
     }
+    .strip {
+        height: 35px;
+    }
+    .strip > h3 {
+        font-size: 16px;
+    }
+
     .dropdownHouse > p,
     .dropdownHouse > ul {
-        min-height: 230px;
+        min-height: 150px;
+        font-size: 12px;
+    }
+    .dropdown > p,
+    .dropdown > ul {
+        font-size: 13px;
     }
 }

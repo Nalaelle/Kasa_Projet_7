@@ -7,7 +7,10 @@ const Home = () => {
     return (
         <main className={style.main}>
             <div className={style.imgBanner}>
-                <p>Chez vous, partout et ailleurs</p>
+                <p>
+                    <span> Chez vous, </span>
+                    <span>partout et ailleurs</span>
+                </p>
             </div>
             <Cards />
         </main>

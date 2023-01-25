@@ -25,5 +25,6 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 17% 31%;
+        border-radius: 10px;
     }
 }

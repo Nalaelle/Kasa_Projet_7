@@ -40,7 +40,7 @@ nav {
 
 @media screen and (min-width: 0px) and (max-width: 530px) {
     main {
-        margin: 20px;
+        margin: 15px;
     }
 
     .header {
@@ -60,7 +60,8 @@ nav {
 
     nav .dotNavigation {
         font-size: 14px;
-        padding: 5px;
+        padding: 5px 0 5px 14px;
+        text-transform: uppercase;
     }
 }
 
@@ -85,12 +86,8 @@ nav {
     }
 
     nav .dotNavigation {
-        font-size: 15px;
-        padding: 5px;
-    }
-
-    nav .dotNavigation {
         font-size: 20px;
         padding: 15px;
+        text-transform: uppercase;
     }
 }
