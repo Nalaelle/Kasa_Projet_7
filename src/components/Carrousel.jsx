@@ -30,7 +30,7 @@ const Carrousel = ({ data, dataID }) => {
                 }}
                 role="button"
                 className={`${style.arrowCarrouselLeft} ${
-                    counteurImg !== 1 ? style.arrows : ""
+                    counteurImg !== 1 ? style.arrows : style.arrowDisplayNone
                 }`}
                 src={Arrow}
                 alt=" fleche de direction précedente"
@@ -60,7 +60,7 @@ const Carrousel = ({ data, dataID }) => {
                 }}
                 role="button"
                 className={`${style.arrowCarrouselRight} ${
-                    counteurImg !== 1 ? style.arrows : ""
+                    counteurImg !== 1 ? style.arrows : style.arrowDisplayNone
                 }`}
                 src={Arrow}
                 alt=" fleche de direction suivante"

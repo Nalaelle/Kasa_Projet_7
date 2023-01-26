@@ -1,5 +1,5 @@
 import React from "react";
-import { useWindowSize } from "./hooks/ScreenSize";
+import { useWindowSize } from "./hooks/UseWindowSize";
 import style from "../styles/Housing.module.css";
 
 const Rating = ({ numberRating }) => {

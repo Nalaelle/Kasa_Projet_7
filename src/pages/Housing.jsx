@@ -4,7 +4,7 @@ import Dropdown from "../components/Dropdown";
 import Rating from "../components/Rating";
 import style from "../styles/Housing.module.css";
 
-import { useFetch } from "../components/hooks/FetchApi";
+import { useFetch } from "../components/hooks/UseFetch";
 
 import Carrousel from "../components/Carrousel";
 

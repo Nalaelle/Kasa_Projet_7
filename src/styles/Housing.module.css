@@ -24,7 +24,7 @@
 .tag {
     display: inline-block;
     text-align: center;
-    margin: 10px 20px 10px 0;
+    margin: 10px 15px 10px 0;
     border-radius: 10px;
     color: #fff;
     background-color: var(--colorPrimary);
@@ -61,8 +61,8 @@
 
 .infosOwner > img {
     border-radius: 50%;
-    height: 65px;
-    width: 65px;
+    height: 67px;
+    width: 67px;
     background-color: #c4c4c4;
     object-fit: cover;
 }
@@ -90,9 +90,9 @@
 
     .tag {
         font-size: 10px;
-        line-height: 18px;
+        line-height: 20px;
         border-radius: 5px;
-        height: 18px;
+        height: 21px;
         min-width: 85px;
     }
 
@@ -106,17 +106,17 @@
 
     .infosOwner {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         margin: 15px 0 15px 15px;
     }
     .infosOwner > p {
         margin-right: 15px;
-        font-size: 12px;
+        font-size: 14px;
         text-align: end;
     }
     .infosOwner > img {
-        height: 42px;
-        width: 42px;
+        height: 62px;
+        width: 62px;
     }
 
     .stars {

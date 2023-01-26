@@ -1,5 +1,5 @@
 import React from "react";
-import { useFetch } from "./hooks/FetchApi";
+import { useFetch } from "./hooks/UseFetch";
 import style from "../styles/Cards.module.css";
 import { NavLink } from "react-router-dom";
 
